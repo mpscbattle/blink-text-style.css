@@ -15,23 +15,26 @@
 }
 
 
-/* Attractive Blink Link */
-.blink-button {
+.blink-text-box {
   display: inline-block;
   background: #ff3b30;
-  color: #fff !important;
   padding: 6px 12px;
   border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none !important;
-  animation: buttonBlink 1s infinite;
+  text-decoration: none;
 }
 
-@keyframes buttonBlink {
+.blink-text-box span {
+  color: #fff !important;
+  font-weight: bold;
+  animation: textBlink 1s infinite;
+}
+
+@keyframes textBlink {
   0%, 100% {
     opacity: 1;
   }
   50% {
-    opacity: 0.55;
+    opacity: 0.2;
   }
 }
+
