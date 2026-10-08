@@ -1,8 +1,37 @@
-.blink-text {
-  animation: blinkText 1s infinite;
+/* Simple Blink Text */
+.blink-link {
+  animation: simpleBlink 1s infinite;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-@keyframes blinkText {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+@keyframes simpleBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+
+/* Attractive Blink Link */
+.blink-button {
+  display: inline-block;
+  background: #ff3b30;
+  color: #fff !important;
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none !important;
+  animation: buttonBlink 1s infinite;
+}
+
+@keyframes buttonBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
 }
